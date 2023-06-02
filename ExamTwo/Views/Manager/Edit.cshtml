@@ -1,0 +1,15 @@
+﻿@model ExamtwoClass
+
+@{
+    ViewBag.Title = "Edit Product";
+}
+
+<form method="post">
+    <partial name="CreateEditPartial" model="Model"/>
+    <button type="submit">Save</button>
+</form>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

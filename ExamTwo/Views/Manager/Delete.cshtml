@@ -1,0 +1,12 @@
+﻿@model ExamtwoClass
+
+@{
+    ViewBag.Title = "Delete Exam: " + Model.Name;
+}
+
+<form method="post" asp-action="DeleteConfirmed" asp-route-id="@Model.Id">
+    <p>Are you sure you want to delete exam "@Model.Name"?</p>
+
+    <a asp-action="ManagerExamtwo" class="btn btn-light">No</a>
+    <button type="submit" class="btn btn-danger">Yes</button>
+</form>
